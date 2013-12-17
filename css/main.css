@@ -1,0 +1,90 @@
+  body {
+    font-family: "brandon-grotesque";
+  }
+  .container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  .container-wash {
+    background-color: rgba(0,0,0,0);
+    z-index: 2;
+  }
+  .container-background {
+    left: -10%;
+    background-image: url('http://666a658c624a3c03a6b2-25cda059d975d2f318c03e90bcf17c40.r92.cf1.rackcdn.com/unsplash_526069a5a3f56_1.JPG');
+    /*
+
+  http://666a658c624a3c03a6b2-25cda059d975d2f318c03e90bcf17c40.r92.cf1.rackcdn.com/unsplash_529f1e8522a2a_1.JPG
+  http://666a658c624a3c03a6b2-25cda059d975d2f318c03e90bcf17c40.r92.cf1.rackcdn.com/unsplash_52961f092a597_1.JPG
+  http://666a658c624a3c03a6b2-25cda059d975d2f318c03e90bcf17c40.r92.cf1.rackcdn.com/unsplash_528b276e41166_1.JPG
+  http://666a658c624a3c03a6b2-25cda059d975d2f318c03e90bcf17c40.r92.cf1.rackcdn.com/unsplash_526069a5a3f56_1.JPG
+  http://666a658c624a3c03a6b2-25cda059d975d2f318c03e90bcf17c40.r92.cf1.rackcdn.com/unsplash_523b2af0710a7_1.JPG
+  http://666a658c624a3c03a6b2-25cda059d975d2f318c03e90bcf17c40.r92.cf1.rackcdn.com/unsplash_5244804364ab0_1.JPG
+  http://666a658c624a3c03a6b2-25cda059d975d2f318c03e90bcf17c40.r92.cf1.rackcdn.com/unsplash_5239196e5ae68_1.JPG
+  http://unsplash.s3.amazonaws.com/batch%209/sonja-langford-acorns.jpg
+
+
+    */
+    background-size: cover;
+    background-position: center;
+    /*-webkit-animation: ken-burns 40s forwards;*/
+  }
+  .wander {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 3;
+    -webkit-transform: translate3d(-50%, -45%, 0);
+    -webkit-animation: move-up 1s 2.5s cubic-bezier(.8, .02, .45, 1) forwards;
+  }
+  .wander-logo {
+    display: block;
+    margin: 0 auto 22px;
+    width: 70px;
+    height: 46px;
+  }
+  .wander-logo-path {
+    fill: transparent;
+    stroke: #fff;
+    stroke-width: 46;
+  }
+  .wander-title {
+    font-weight: 900;
+    font-size: 24px;
+    letter-spacing: 26px;
+    text-align: center;
+    text-transform: uppercase;
+    color: rgba(255,255,255,1);
+  }
+  .wander-title > span {
+    opacity: 0;
+  }
+  
+.wander-title-w { -webkit-animation: letter-in 1s 2s forwards; }
+.wander-title-a { -webkit-animation: letter-in 1s 2s forwards; }
+.wander-title-n { -webkit-animation: letter-in 1s 2s forwards; }
+.wander-title-d { -webkit-animation: letter-in 1s 2s forwards; }
+.wander-title-e { -webkit-animation: letter-in 1s 2s forwards; }
+.wander-title-r { -webkit-animation: letter-in 1s 2s forwards; letter-spacing: 0; }
+
+
+  .btn {
+    border-radius: 3px;
+    border: 2px solid #fff;
+    display: block;
+    padding: 12px 30px;
+    color: #fff;
+    background-color: transparent;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 8px;
+    font-weight: 900;
+    font-family: "brandon-grotesque";
+    opacity: 0;
+    -webkit-transform: translate3d(0, 10px, 0);
+    -webkit-animation: btn-in 1s 3s forwards;
+    margin: 80px auto 0;
+  }
