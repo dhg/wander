@@ -8,13 +8,13 @@
   }
 }
 */
-@-webkit-keyframes move-up {
+/*@-webkit-keyframes move-up {
   0% { 
     -webkit-transform: translate3d(-50%, -45%, 0);
   } 100% {
     -webkit-transform: translate3d(-50%, -60%, 0);
   } 
-}
+}*/
 
 @-webkit-keyframes btn-in {
   0% { 
