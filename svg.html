@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+  body {
+    font-family: "brandon-grotesque";
+  }
+  .container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  .container-wash {
+    background-color: rgba(0,0,0,0);
+    z-index: 2;
+  }
+  .container-background {
+    left: -10%;
+    background-image: url('http://666a658c624a3c03a6b2-25cda059d975d2f318c03e90bcf17c40.r92.cf1.rackcdn.com/unsplash_526069a5a3f56_1.JPG');
+    /*
+
+  http://666a658c624a3c03a6b2-25cda059d975d2f318c03e90bcf17c40.r92.cf1.rackcdn.com/unsplash_529f1e8522a2a_1.JPG
+  http://666a658c624a3c03a6b2-25cda059d975d2f318c03e90bcf17c40.r92.cf1.rackcdn.com/unsplash_52961f092a597_1.JPG
+  http://666a658c624a3c03a6b2-25cda059d975d2f318c03e90bcf17c40.r92.cf1.rackcdn.com/unsplash_528b276e41166_1.JPG
+  http://666a658c624a3c03a6b2-25cda059d975d2f318c03e90bcf17c40.r92.cf1.rackcdn.com/unsplash_526069a5a3f56_1.JPG
+  http://666a658c624a3c03a6b2-25cda059d975d2f318c03e90bcf17c40.r92.cf1.rackcdn.com/unsplash_523b2af0710a7_1.JPG
+  http://666a658c624a3c03a6b2-25cda059d975d2f318c03e90bcf17c40.r92.cf1.rackcdn.com/unsplash_5244804364ab0_1.JPG
+  http://666a658c624a3c03a6b2-25cda059d975d2f318c03e90bcf17c40.r92.cf1.rackcdn.com/unsplash_5239196e5ae68_1.JPG
+  http://unsplash.s3.amazonaws.com/batch%209/sonja-langford-acorns.jpg
+
+
+    */
+    background-size: cover;
+    background-position: center;
+    /*-webkit-animation: ken-burns 40s forwards;*/
+  }
+  .wander {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 3;
+    -webkit-transform: translate3d(-50%, -45%, 0);
+    -webkit-animation: move-up 1s 2.5s cubic-bezier(.8, .02, .45, 1) forwards;
+  }
+  .wander-logo {
+    display: block;
+    margin: 0 auto 22px;
+    width: 70px;
+    height: 46px;
+  }
+  .wander-logo-path {
+    fill: transparent;
+    stroke: #fff;
+    stroke-width: 46;
+  }
+  .wander-title {
+    font-weight: 900;
+    font-size: 24px;
+    letter-spacing: 26px;
+    text-align: center;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0);
+    -webkit-animation: blur-in 1.5s 2s forwards;
+  }
+  .last-letter {
+    letter-spacing: 0;
+  }
+  .btn {
+    border-radius: 3px;
+    border: 2px solid #fff;
+    display: block;
+    padding: 12px 30px;
+    color: #fff;
+    background-color: transparent;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 8px;
+    font-weight: 900;
+    font-family: "brandon-grotesque";
+    opacity: 0;
+    -webkit-transform: translate3d(0, 10px, 0);
+    -webkit-animation: btn-in 1s 3s forwards;
+    margin: 80px auto 0;
+  }
+
+@-webkit-keyframes blur-in {
+  0% { 
+    text-shadow: 0 0 10px rgba(255,255,255,0);
+  } 100% {
+    color: rgba(255,255,255,1);
+    text-shadow: 0 0 0 rgba(255,255,255,.7);
+  }
+}
+
+@-webkit-keyframes move-up {
+  0% { 
+    -webkit-transform: translate3d(-50%, -45%, 0);
+  } 100% {
+    -webkit-transform: translate3d(-50%, -60%, 0);
+  } 
+}
+
+@-webkit-keyframes btn-in {
+  0% { 
+    -webkit-transform: translate3d(0, 10px, 0);
+    opacity: 0;
+  } 100% {
+    -webkit-transform: translate3d(0, 0, 0);
+    opacity: 1;
+  } 
+}
+/*
+@-webkit-keyframes ken-burns {
+  0% { 
+    -webkit-transform: translate3d(0, 0, 0);
+  } 100% {
+    -webkit-transform: translate3d(5%, 0, 0) scale(1.1, 1.1);
+  } 
+}*/
+
+
+  </style>
+  <script type="text/javascript" src="//use.typekit.net/lma1uqo.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+  <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+	<script type="text/javascript">
+
+  $(document).ready(function() {
+    var path = document.querySelector('.wander path');
+    var length = path.getTotalLength();
+    // Clear any previous transition
+    path.style.transition = path.style.WebkitTransition =
+      'none';
+    // Set up the starting positions
+    path.style.strokeDasharray = length + ' ' + length;
+    path.style.strokeDashoffset = length;
+    // Trigger a layout so styles are calculated & the browser
+    // picks up the starting position before animating
+    path.getBoundingClientRect();
+    // Define our transition
+    path.style.transition = path.style.WebkitTransition =
+      'stroke-dashoffset 2s .5s cubic-bezier(.5, .4, .45, .6)';
+    // Go!
+    path.style.strokeDashoffset = '0';  
+  })
+
+	</script>
+</head>
+<body>
+  <div class="container container-background"></div>
+  <div class="container container-wash"></div>
+  <div class="wander">
+    <svg class="wander-logo" viewBox="-50 -30 860 455">
+      <path class="wander-logo-path" d="M 0 425 L 319 0 L 482 224 L 559 129 L 767 425 L 0 425 L 319 0" />
+    </svg>
+    <h1 class="wander-title">Wande<span class="last-letter">r</span></h1>
+    <button class="btn">Begin</button>
+  </div>
+</body>
+</html>
+
+
+<!-- 
+
+139, 551
+
+
+
+ -->
