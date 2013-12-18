@@ -9,22 +9,20 @@
     left: 0;
   }
   .container-wash {
-    background-color: rgba(0,0,0,.7);
+    background-color: rgba(0,0,0,.6);
     z-index: 2;
   }
   .container-background {
-    left: -10%;
     background-image: url('http://unsplash.s3.amazonaws.com/batch%209/sonja-langford-acorns.jpg');
     /*
 
-  http://666a658c624a3c03a6b2-25cda059d975d2f318c03e90bcf17c40.r92.cf1.rackcdn.com/unsplash_529f1e8522a2a_1.JPG
-  http://666a658c624a3c03a6b2-25cda059d975d2f318c03e90bcf17c40.r92.cf1.rackcdn.com/unsplash_52961f092a597_1.JPG
-  http://666a658c624a3c03a6b2-25cda059d975d2f318c03e90bcf17c40.r92.cf1.rackcdn.com/unsplash_528b276e41166_1.JPG
-  http://666a658c624a3c03a6b2-25cda059d975d2f318c03e90bcf17c40.r92.cf1.rackcdn.com/unsplash_526069a5a3f56_1.JPG
-  http://666a658c624a3c03a6b2-25cda059d975d2f318c03e90bcf17c40.r92.cf1.rackcdn.com/unsplash_523b2af0710a7_1.JPG
-  http://666a658c624a3c03a6b2-25cda059d975d2f318c03e90bcf17c40.r92.cf1.rackcdn.com/unsplash_5244804364ab0_1.JPG
-  http://666a658c624a3c03a6b2-25cda059d975d2f318c03e90bcf17c40.r92.cf1.rackcdn.com/unsplash_5239196e5ae68_1.JPG
-  http://unsplash.s3.amazonaws.com/batch%209/sonja-langford-acorns.jpg
+  5 http://666a658c624a3c03a6b2-25cda059d975d2f318c03e90bcf17c40.r92.cf1.rackcdn.com/unsplash_529f1e8522a2a_1.JPG
+ 7  http://666a658c624a3c03a6b2-25cda059d975d2f318c03e90bcf17c40.r92.cf1.rackcdn.com/unsplash_52961f092a597_1.JPG
+  6 http://666a658c624a3c03a6b2-25cda059d975d2f318c03e90bcf17c40.r92.cf1.rackcdn.com/unsplash_528b276e41166_1.JPG
+  4 http://666a658c624a3c03a6b2-25cda059d975d2f318c03e90bcf17c40.r92.cf1.rackcdn.com/unsplash_526069a5a3f56_1.JPG
+  3 http://666a658c624a3c03a6b2-25cda059d975d2f318c03e90bcf17c40.r92.cf1.rackcdn.com/unsplash_5244804364ab0_1.JPG
+ 6  http://666a658c624a3c03a6b2-25cda059d975d2f318c03e90bcf17c40.r92.cf1.rackcdn.com/unsplash_5239196e5ae68_1.JPG
+ 6  http://unsplash.s3.amazonaws.com/batch%209/sonja-langford-acorns.jpg
 
 
     */
@@ -37,14 +35,14 @@
     top: 50%;
     left: 50%;
     z-index: 3;
-    -webkit-transform: translate3d(-50%, -45%, 0);
+    -webkit-transform: translate3d(-50%, -30%, 0);
     -webkit-animation: move-up .8s 2.8s cubic-bezier(.8, .02, .45, 1) forwards;
   }
   .wander-logo {
     display: block;
     margin: 0 auto 22px;
-    width: 70px;
-    height: 46px;
+    width: 80px;
+    height: 54px;
   }
   .wander-logo-path {
     fill: transparent;
@@ -53,7 +51,7 @@
   }
   .wander-title {
     font-weight: 900;
-    font-size: 28px;
+    font-size: 32px;
     text-align: center;
     text-transform: uppercase;
     color: rgba(255,255,255,1);
@@ -90,7 +88,7 @@
     opacity: 0;
     -webkit-transform: translate3d(0, 10px, 0);
     -webkit-animation: btn-in 1s 3s forwards;
-    margin: 140px auto 0;
+    margin: 160px auto 0;
     cursor: pointer;
   }
   .btn:focus,
